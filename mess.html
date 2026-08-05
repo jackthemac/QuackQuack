@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<ht lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<style>
+	  body {
+		display: flex;
+		flex-direction: column;
+		gap: 0px;
+		height: 100vh;
+        font-family: Arial, sans-serif;
+		margin: 0;
+    }
+	.contain {
+		display: flex;
+		flex-direction: column;
+		gap: 0px;
+
+	}
+	  .columns {
+		display: flex;
+		gap: 0px;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px;
+		margin: 0;
+	}
+
+	 .heavy {
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 400px;
+        text-align: center;
+		margin: 0;
+}
+      .column {
+		width: 33.33%;
+		height: 300px;
+		margin: 0;
+		padding: 0;
+	  }
+	  .pink {
+		background-color: pink;
+		background-size: cover;
+	  }
+	  .green {
+
+	  }
+	  .blue {
+		background-color: blue;
+		background-size: cover;
+	  }
+
+      .top-section {
+		background-color: #f0f0f0;
+		text-align: center;
+		line-height: 200px;
+		padding: 20px 0;
+	}
+	.within {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 50px;
+		padding: 20px;
+		margin:0;
+		background-color: #d2da66;
+	}
+	.foot-enclose {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+}
+.foot-enclose-container {
+	display: flex;
+	gap: 20px;
+	padding: 20px;
+	justify-content: center;
+}
+
+.bottom-text {
+    margin-top: auto; /* Pushes this element to the bottom */
+	text-align: center;
+	font-size: 1.3em;
+	color: white;
+}
+
+	.footer {
+		background-color: #333;
+		color: white;
+		line-height: 20px;
+		padding: 20px 0;
+		margin: 0;
+		display: flex;
+		gap: 10px;
+        justify-content: center;
+		align-items: flex-start;
+	}
+		line-height: 50px;
+		list-style-type: none;
+	}
+	ul.footer-links li {
+		display: inline;
+		margin: 0 10px;
+	}
+	li a {
+		color: yellow;
+		text-decoration: none;
+	}
+	li {
+		color: orange;
+	}
+	.footer-links-container {
+		display:flex;
+
+	}
+  @media only screen and (max-width: 600px) {
+		.columns {
+			flex-direction: column;
+		}
+		.column {
+			width: 100%;
+			height: auto;
+		}
+		.within {
+			flex-direction: column;
+			gap: 20px;
+		}
+        img {
+        width="200px"
+        }
+
+        .foot-enclose  {
+        overflow-x: hidden;
+        }
+		 .foot-enclose-container {
+        display: flex;
+        flex-direction: column;
+        }
+	}
+</style>
+</head>
+<body>
+<div class="top-section">
+    <h1>Quack Quack</h1>
+    <h2>Rubber stamp and a stamp of Ducks.</h2>
+</div>
+<div class="contain">
+  <p class="heavy">Mask and a tropical island</p>
+</div>
+<div class="columns">
+  <div class="column blue within"><img src="https://cdn.pixabay.com/photo/2017/08/06/23/03/carnival-mask-2597304_1280.jpg" width="200px" alt="Footer Image"></div>
+<div class="column green within"><iframe src="https://www.ducks.org/conservation/waterfowl-research-science/understanding-waterfowl-the-science-of-disturbance" width="100%" height="100%" frameborder="0" allowfullscreen></iframe></div>
+  <div class="column pink within"><img src="https://media.istockphoto.com/id/1249014385/photo/babassu-palm-tree-in-brazil.jpg?s=2048x2048&w=is&k=20&c=3euQuZgJrdl4i4qUofy6Y0emRkbSOmD5XzaqhFElLCw=" width="200px" alt="Footer Image"></div>
+</div>
+<div class="within">
+	<div><img src="https://cdn.pixabay.com/photo/2018/05/31/23/45/stamp-3445413_1280.jpg" width="200px" height="150px" alt="Rubber Stamp">
+	<p>Just a fast hit of the paper, and you have a seal.</p>
+	</div>
+	<div>
+		<img src="https://media.istockphoto.com/id/182930004/photo/polands-millennium.jpg?s=2048x2048&w=is&k=20&c=Z38DoKQ4tZvlHg71qB6CSwHY6YVURvdeXM5NYPgIJUM=" width="200px" height="150px" alt="Rubber Stamp">
+		<p>Ducks standing and watching something</p>
+	</div>
+
+</div>
+<div class="foot-enclose">
+	<div class="footer">
+	<div><img src="images/facebook-2815970_640.jpg" width="20px" alt="Footer Image"></div>
+	<div><img src="images/instagram.png" width="45px" alt="Footer Image"></div>
+	<div><img src="images/twitter-2815914_640.jpg" width="20px" alt="Footer Image"></div>
+	<div><img src="images/youtube-6621791_640.jpg" width="32px" alt="Footer Image"></div>
+   </div>
+   <div class="foot-enclose-container">
+	<ul style="display: flex; flex: 1 0 198px; flex-direction: column;" class="footer-links">
+  <li ><a target="_blank" href="https://whimsystamps.com">Stamps</a></li>
+  <li><a target="_blank" href="https://www.ducks.org/migrationmap">Migration</a></li>
+  <li><a target="_blank" href="https://www.ducks.org/conservation/national/how-duck-hunters-are-saving-the-planet">Conservation</a></li>
+</ul>
+<ul style="display: flex; flex: 1 0 198px; flex-direction: column;" class="footer-links words">
+  <li>Ducks on stamps are so lickable</li>
+  <li>Migration map helps the birdwatcher keep track</li>
+  <li>Conservation is what it is all about!</li>
+</ul>
+</div>
+</div>
+
+
+
+<p class="bottom-text">&copy;2026</p>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
